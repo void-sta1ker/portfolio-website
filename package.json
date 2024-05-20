@@ -51,5 +51,9 @@
   },
   "resolutions": {
     "react-countup/countup.js": "2.5.0"
+  },
+  "volta": {
+    "node": "20.11.0",
+    "npm": "10.2.4"
   }
 }

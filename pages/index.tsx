@@ -109,6 +109,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
   // const projects = await import("@/data/projects.json");
   // const projects = await fetch("@/data/projects.json");
 
+  // WARNING: fetch api behavior changed in recent node versions
+
   // const [technologies, stats, clients, projects] = await Promise.all([
   //   fetch(process.env.TECHNOLOGIES_URL),
   //   fetch(process.env.STATS_URL),
