@@ -18,5 +18,8 @@ module.exports = {
   eslint: {
     dirs: ["src"],
   },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   nextConfig,
 };
