@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "name": "Experience in years",
+    "icon": {
+      "src": "/icons/dropper.webp",
+      "alt": "experience icon"
+    },
+    "count": 3
+  },
+  {
+    "id": "2",
+    "name": "Commits",
+    "icon": {
+      "src": "/icons/commit.webp",
+      "alt": "commit icon"
+    },
+    "count": 2000
+  },
+  {
+    "id": "3",
+    "name": "Projects contributed",
+    "icon": {
+      "src": "/icons/development.webp",
+      "alt": "projects icon"
+    },
+    "count": 10
+  },
+  {
+    "id": "4",
+    "name": "Companies worked at",
+    "icon": {
+      "src": "/icons/office.webp",
+      "alt": "office icon"
+    },
+    "count": 3,
+    "companies": [
+      {
+        "name": "Udevs",
+        "url": "https://udevs.io"
+      },
+      {
+        "name": "Epam Systems",
+        "url": "https://www.epam.com"
+      },
+      {
+        "name": "Invan",
+        "url": "https://in1.uz"
+      }
+    ]
+  }
+]

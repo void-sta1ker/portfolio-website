@@ -1,0 +1,9 @@
+.backdrop {
+  // display: none;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+
+  inset: 0;
+  z-index: 1001;
+}

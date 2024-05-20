@@ -1,0 +1,60 @@
+@use "sass:color";
+
+.tag {
+  border-radius: 5rem;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  min-width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & > p {
+    padding-left: 0.5rem;
+  }
+}
+
+.red {
+  color: var(--red);
+  // background: hsla(
+  //   color.hue(#ea3d26),
+  //   color.saturation(#ea3d26),
+  //   color.lightness(#ea3d26),
+  //   0.3
+  // );
+  background: lighten(#ea3d26, 40%);
+}
+
+.blue {
+  color: var(--light-blue);
+  background: lighten(#2a9d8f, 50%);
+}
+
+.darkblue {
+  color: var(--dark-blue);
+  background: lighten(#264653, 50%);
+}
+
+.green {
+  color: #6eb744;
+  background: lighten(#6eb744, 40%);
+}
+
+.yellow {
+  color: darken(#ecd444, 20%);
+  background: lighten(#ecd444, 35%);
+}
+
+.orange {
+  color: var(--orange);
+  background: lighten(#e76f51, 50%);
+}
+
+.purple {
+  color: var(--purple);
+  background: lighten(#6e2594, 50%);
+}
+
+// other colors should also be available from the color palette or from types/tag.ts
+
+// sass function to gen lighter color of the provided color

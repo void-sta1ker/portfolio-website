@@ -1,0 +1,131 @@
+// .background {
+//   // sass helpers to get rgb values from hex
+//   background: rgba($color: #0d1321, $alpha: 1);
+//   display: inline-block;
+//   position: absolute;
+//   top: 1.2rem;
+//   right: 2.15rem;
+//   width: 50px;
+//   height: 50px;
+//   border-radius: 50%;
+//   z-index: 999999;
+// }
+
+.container {
+  display: none;
+  background-color: #264653;
+  width: 50px;
+  height: 45px;
+  position: absolute;
+  top: 2rem;
+  right: 2.7rem;
+  z-index: 999999;
+  margin: 0 0 0 auto;
+  transform: translate(7px, -11px);
+  border-radius: 5px;
+}
+
+.hamburger {
+  display: none;
+  width: 33.3px; // was 40
+  height: 25px; // was 30
+  position: absolute;
+  top: 2rem;
+  right: 2.7rem;
+  margin: 0 0 0 auto;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 999999;
+
+  span {
+    display: block;
+    position: absolute;
+    height: 3px; // was 6px
+    width: 50%;
+    // background: #ffb400;
+    // background: #59d2fe;
+    // background: #f6511d;
+    // background: #5c7aff;
+    // background: #6e2594;
+    background: #fff;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+
+  span:nth-child(even) {
+    left: 48%;
+    border-radius: 0 6px 6px 0;
+  }
+
+  span:nth-child(odd) {
+    left: 0px;
+    border-radius: 6px 0 0 6px;
+  }
+
+  span:nth-child(1),
+  span:nth-child(2) {
+    top: 0px;
+  }
+
+  span:nth-child(3),
+  span:nth-child(4) {
+    top: 10px; // was 12px
+  }
+
+  span:nth-child(5),
+  span:nth-child(6) {
+    top: 20px; // was 24px
+  }
+}
+
+.open span:nth-child(1),
+.open span:nth-child(6) {
+  transform: rotate(45deg);
+}
+
+.open span:nth-child(2),
+.open span:nth-child(5) {
+  transform: rotate(-45deg);
+}
+
+.open span:nth-child(1) {
+  left: 2.7px; // was 3.2px
+  top: 3.8px; // was 4.6px
+}
+
+.open span:nth-child(2) {
+  left: calc(50% - 2.7px); // was 3.2px
+  top: 3.8px; // was 4.6px
+}
+
+.open span:nth-child(3) {
+  left: -50%;
+  opacity: 0;
+}
+
+.open span:nth-child(4) {
+  left: 100%;
+  opacity: 0;
+}
+
+.open span:nth-child(5) {
+  left: 2.7px; // was 3.2px
+  top: 16px; // was 19.2
+}
+
+.open span:nth-child(6) {
+  left: calc(50% - 2.7px); // was 3.2
+  top: 16px; // was 19.2
+}
+
+// Mobile
+@media (max-width: 767px) {
+  .container {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+}

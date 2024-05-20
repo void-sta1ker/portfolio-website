@@ -1,0 +1,55 @@
+.link {
+  padding: 0.5rem 1rem;
+  font-size: var(--font-size-md);
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .link {
+    padding: 0.25rem 0.5rem;
+    font-size: var(--font-size-sm);
+  }
+}
+
+.hover {
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAADPklEQVRYhe2XTUwTQRTH3+xuu/1my0ILliqfKphKDKJCgAhGPgTxIH6Eg4kHw8F4gBiQgwkeDIoxGhPDwejBg0SjF/xAiB8YBBOp8YAkBgEhUiOEUiiUdtnujgeSCkhh27Ry8X+amTfz3i8z895kACRq/423TElTdxJgjKSukSJJzo7fstbJZeR5VisXbXa3jXNAztOG3fOhACDXm1Da2KXXqOmWSyfTo7K2RaspCthvdqfna/ud96EAINab4CWphC3RGkygxc1KMurkShmVEYrgkgCwgBBCy899ZT+sAOHWf4ANB6CCXVh4pTuPwMjkUXBtndX50/8UwOHiyzIS2Xwzq1a9+TI+VdTYk6dSURVygkh2zi3cbqvP/hw2AJJAUJkbL8tJNegBAIx6Zczd14N9pbvikClSST/o+n6k8GrPGUZNVwEGk+AVbz6pzrznz1/AdyCOVUFOqsFXB9Lj9ehs8VbFgZ0x9Pa4CDhdkByllpEtVQeTiy4es1hMrPL6oaaPxSEDWCmSQJBmZnz9BKMGLhy1KBKNWqRRUFC+x8zoVGRl2ABWkyFC4WtTJAEEAvU/BQhE6wIQWJCvHON4ATheAAAAEWOYc/M+m3OeXzk9eIDCa90GrYp+mJViZJaOWwftYB20AwCAzT4PrVabz9bcPhAQwJppyNB0y6n8RFOaWbcMVMTL23hpf6lRgvzuQFFjT3KkhrbsMDNhvSd+ncvkZHlOmoENZ/A1AdRyWbohgg57lvgNsCB4h1weIbADDSWAy8N3Wofsjg0D6KjL7hqwOWdXy2tWKwdWu1getEoKYvV/Kl9KrC40AIAQdnvFutbesb/e+jQz46v/kRoaCiwxPltF9uYQAQDAs5rMR32jjonJWS4gp0s16+aBF+BnUACAEJ71eM897hmdChbg06B9esbNtwYHAABttfs6hsddfX2j00KgwUcm5nD/2Iyto3bvq6ABAAA8C7jifufw8Lv+CU6QUGoxAPQOTArNLwd+zDjFEkDI7yLJP5zDDVaVkoFGIOBEtE4Beq1s1X+ly+0Vfzk4EDF+Meear3len7tmKgf+xcIYlV3+sGmBJGJWMyMQZziOG+lsyPdKcfcbWJISNLZcfMAAAAAASUVORK5CYII="),
+      auto;
+  }
+}
+
+.underline {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -0.125rem;
+    left: -0.5rem;
+    right: -0.5rem;
+    height: 0.75rem;
+
+    // Position the line behind the text so that
+    // it is still easily readable
+    z-index: -1;
+
+    // The SVG is added as an SVG background image
+    background-image: url("/icons/underline.svg");
+    background-repeat: no-repeat;
+
+    // This allows the SVG to flex in size to fit
+    // any length of word. If the word is short,
+    // the SVG will be stretched vertically, if it
+    // is long, the SVG will be stretched horizontally.
+    // The jagged nature of this particular SVG works
+    // with this transforming.
+    background-size: cover;
+
+    // Specific positioning for smaller text
+    bottom: -0.2rem;
+    height: 0.5rem;
+    left: -0.25rem;
+    right: -0.25rem;
+  }
+}

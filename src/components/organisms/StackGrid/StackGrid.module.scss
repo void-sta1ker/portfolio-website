@@ -1,0 +1,36 @@
+.grid {
+  display: grid;
+  justify-items: stretch;
+  align-items: stretch;
+  gap: 1rem;
+
+  * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 5px;
+    background: #0d1321;
+  }
+}
+
+// Mobile
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(62.5px, 1fr));
+  }
+}
+
+// Tablet
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+  }
+}
+
+// Desktop
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}

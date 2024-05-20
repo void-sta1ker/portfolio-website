@@ -1,0 +1,31 @@
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // For navlink svg
+    span {
+      position: relative;
+    }
+
+    svg {
+      position: absolute;
+      bottom: 0;
+      left: 1rem;
+    }
+  }
+}
+
+.horizontal {
+  flex-direction: row;
+}
+
+.vertical {
+  flex-direction: column;
+}

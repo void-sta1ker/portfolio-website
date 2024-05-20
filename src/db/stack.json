@@ -1,0 +1,206 @@
+[
+  {
+    "src": "/icons/stack/javascript.svg",
+    "alt": "JavaScript"
+  },
+  {
+    "src": "/icons/stack/typescript.svg",
+    "alt": "TypeScript"
+  },
+  {
+    "src": "/icons/stack/sass.svg",
+    "alt": "Sass"
+  },
+  {
+    "src": "/icons/stack/css.svg",
+    "alt": "CSS3"
+  },
+  {
+    "src": "/icons/stack/tailwindcss.svg",
+    "alt": "Tailwind CSS"
+  },
+  {
+    "src": "/icons/stack/postcss.svg",
+    "alt": "Post CSS"
+  },
+  {
+    "src": "/icons/stack/autoprefixer.svg",
+    "alt": "Autoprefixer"
+  },
+  {
+    "src": "/icons/stack/css_modules.svg",
+    "alt": "CSS Modules"
+  },
+  {
+    "src": "/icons/stack/jss.svg",
+    "alt": "JSS"
+  },
+  {
+    "src": "/icons/stack/netlify.svg",
+    "alt": "Netlify"
+  },
+  {
+    "src": "/icons/stack/json.svg",
+    "alt": "Json"
+  },
+  {
+    "src": "/icons/stack/jwt.svg",
+    "alt": "JWT"
+  },
+  {
+    "src": "/icons/stack/nextjs.svg",
+    "alt": "Next.js"
+  },
+  {
+    "src": "/icons/stack/nodejs.svg",
+    "alt": "Node.js"
+  },
+  {
+    "src": "/icons/stack/lodash.svg",
+    "alt": "Lodash"
+  },
+  {
+    "src": "/icons/stack/html.svg",
+    "alt": "HTML5"
+  },
+  {
+    "src": "/icons/stack/reactjs.svg",
+    "alt": "React.js"
+  },
+  {
+    "src": "/icons/stack/react_query.svg",
+    "alt": "React Query"
+  },
+  {
+    "src": "/icons/stack/react_table.svg",
+    "alt": "React Table"
+  },
+  {
+    "src": "/icons/stack/react_router.svg",
+    "alt": "React Router"
+  },
+  {
+    "src": "/icons/stack/cra.svg",
+    "alt": "Create React App"
+  },
+  {
+    "src": "/icons/stack/prettier.svg",
+    "alt": "Prettier"
+  },
+  {
+    "src": "/icons/stack/eslint.svg",
+    "alt": "ESLint"
+  },
+  {
+    "src": "/icons/stack/jest.svg",
+    "alt": "Jest"
+  },
+  {
+    "src": "/icons/stack/vscode.svg",
+    "alt": "Visual Studio Code"
+  },
+  {
+    "src": "/icons/stack/vim.svg",
+    "alt": "Vim"
+  },
+  {
+    "src": "/icons/stack/vite.svg",
+    "alt": "Vite"
+  },
+  {
+    "src": "/icons/stack/gimp.svg",
+    "alt": "GIMP"
+  },
+  {
+    "src": "/icons/stack/linux.svg",
+    "alt": "Linux"
+  },
+  {
+    "src": "/icons/stack/arch.svg",
+    "alt": "Arch Linux"
+  },
+  {
+    "src": "/icons/stack/firebase.svg",
+    "alt": "Firebase"
+  },
+  {
+    "src": "/icons/stack/bash.svg",
+    "alt": "Bash"
+  },
+  {
+    "src": "/icons/stack/redux.svg",
+    "alt": "Redux"
+  },
+  {
+    "src": "/icons/stack/mui.svg",
+    "alt": "MUI"
+  },
+  {
+    "src": "/icons/stack/postman.svg",
+    "alt": "Postman"
+  },
+  {
+    "src": "/icons/stack/chrome.svg",
+    "alt": "Google Chrome"
+  },
+  {
+    "src": "/icons/stack/svg.svg",
+    "alt": "SVG"
+  },
+  {
+    "src": "/icons/stack/git.svg",
+    "alt": "Git"
+  },
+  {
+    "src": "/icons/stack/github.svg",
+    "alt": "GitHub"
+  },
+  {
+    "src": "/icons/stack/gitlab.svg",
+    "alt": "GitLab"
+  },
+  {
+    "src": "/icons/stack/glitch.svg",
+    "alt": "Glitch"
+  },
+  {
+    "src": "/icons/stack/gatsby.svg",
+    "alt": "Gatsby"
+  },
+  {
+    "src": "/icons/stack/webpack.svg",
+    "alt": "Webpack"
+  },
+  {
+    "src": "/icons/stack/babel.svg",
+    "alt": "Babel"
+  },
+  {
+    "src": "/icons/stack/graphql.svg",
+    "alt": "GraphQL"
+  },
+  {
+    "src": "/icons/stack/antd.svg",
+    "alt": "Ant Design"
+  },
+  {
+    "src": "/icons/stack/npm.svg",
+    "alt": "Npm"
+  },
+  {
+    "src": "/icons/stack/yarn.svg",
+    "alt": "Yarn"
+  },
+  {
+    "src": "/icons/stack/markdown.svg",
+    "alt": "Markdown"
+  },
+  {
+    "src": "/icons/stack/i18next.svg",
+    "alt": "i18next"
+  },
+  {
+    "src": "/icons/stack/bootstrap.svg",
+    "alt": "Bootstrap"
+  }
+]

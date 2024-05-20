@@ -1,0 +1,22 @@
+.brandLogo {
+  font-weight: var(--font-weight-black);
+  font-size: var(--font-size-lg);
+  // z-index: 1;
+
+  background: linear-gradient(
+    to bottom,
+    #179ebe 0%,
+    #179ebe 42%,
+    #db2029 42%,
+    #db2029 45%,
+    #fff 45%,
+    #fff 55%,
+    #db2029 55%,
+    #db2029 58%,
+    #31b44c 58%,
+    #31b44c 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}

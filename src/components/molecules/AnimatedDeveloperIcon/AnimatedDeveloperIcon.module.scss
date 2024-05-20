@@ -1,0 +1,31 @@
+.developer {
+  background: #0d1321;
+  border-radius: 1rem;
+}
+
+// Mobile
+@media (max-width: 767px) {
+  .developer {
+    width: 100%;
+    padding: 2rem;
+    height: 260px;
+  }
+}
+
+// Tablet
+@media (min-width: 768px) and (max-width: 1023px) {
+  .developer {
+    width: 75%;
+    padding: 2rem;
+    height: auto;
+  }
+}
+
+// Desktop
+@media (min-width: 1024px) {
+  .developer {
+    width: 100%;
+    padding: 2rem;
+    height: 420px;
+  }
+}

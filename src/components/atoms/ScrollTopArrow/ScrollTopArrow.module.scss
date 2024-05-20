@@ -1,0 +1,59 @@
+.scrollTop {
+  display: block; // for layout: responsive
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  z-index: 1000;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+// Mobile
+@media (max-width: 767px) {
+  .scrollTop {
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 25px;
+  }
+}
+
+// Tablet
+@media (min-width: 768px) and (max-width: 1023px) {
+  .scrollTop {
+    bottom: 40px;
+    right: 40px;
+  }
+}
+
+// Desktop
+@media (min-width: 1024px) {
+  .scrollTop {
+    bottom: 40px;
+    right: 60px;
+  }
+}
+
+@media (hover: none) {
+  .scrollTop {
+    opacity: 1;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

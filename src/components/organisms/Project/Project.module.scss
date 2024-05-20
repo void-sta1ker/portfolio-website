@@ -1,0 +1,176 @@
+.container {
+  display: flex;
+  gap: 1rem;
+
+  & > * {
+    width: 100%;
+  }
+
+  .picture {
+    position: relative;
+    flex: 1 1 auto;
+
+    & > span {
+      right: -45px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      content: "";
+      display: inline-block;
+      width: 400px;
+      height: 300px;
+      background: #0d1321;
+      border-radius: 15px;
+
+      // polka
+      background: radial-gradient(#655197 2px, transparent 3px),
+        radial-gradient(#655197 2px, transparent 3px), #000;
+      background-position: 0 0, 20px 20px;
+      background-size: 40px 40px;
+    }
+  }
+
+  .project {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    & > *:not(:first-child) {
+      margin-bottom: 1rem;
+    }
+
+    .project__title {
+      font-size: var(--font-size-lg);
+      font-weight: var(--font-weight-bold);
+    }
+
+    .project__description {
+      font-size: 1.2rem;
+    }
+
+    .project__services {
+      h2 {
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+      }
+
+      .listItem {
+        background: #0d1321;
+        border-radius: 5px;
+        padding: 1rem;
+        margin-right: 1rem;
+        width: 150px;
+        height: 125px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+    }
+  }
+}
+
+.reversedOrder {
+  .picture {
+    order: 1;
+
+    & > span {
+      right: -65px;
+    }
+  }
+}
+
+.delever {
+  color: var(--red);
+}
+
+.car24 {
+  color: #703581;
+}
+
+.car24::after {
+  content: "24";
+  color: #8bc348;
+}
+
+.safia {
+  color: #333333;
+}
+
+.aloqabank {
+  color: #0093dc;
+}
+
+.utas {
+  color: #16376b;
+}
+
+.tiin {
+  color: #6eb744;
+}
+
+// Mobile
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+
+    .picture {
+      order: 1;
+
+      & > span {
+        right: 0px;
+      }
+
+      &::before {
+        width: 100%;
+        // height: 100%;
+      }
+    }
+  }
+}
+
+// Tablet
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem auto;
+
+    .picture {
+      & > span {
+        right: 0px;
+      }
+
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+
+  .reversedOrder {
+    .picture {
+      & > span {
+        right: 0px;
+      }
+    }
+  }
+}
+
+// Desktop
+@media (min-width: 1024px) {
+  .container {
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+  }
+}

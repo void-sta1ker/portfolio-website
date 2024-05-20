@@ -1,0 +1,53 @@
+.paper {
+  overflow: hidden;
+  font: var(--font-size-lg) "Architects Daughter", cursive;
+  margin: 0 auto 3rem auto;
+
+  & > * {
+    display: inline-block;
+  }
+}
+
+// Mobile
+@media (max-width: 767px) {
+  .paper {
+    font-size: 0.634em;
+    width: 295px;
+    height: 103px;
+    background-size: 1em 1em;
+    background-image: linear-gradient(
+        var(--dark-blue) 0.05em,
+        transparent 0.05em
+      ),
+      linear-gradient(90deg, var(--dark-blue) 0.05em, transparent 0.05em);
+  }
+}
+
+// Tablet
+@media (min-width: 768px) and (max-width: 1023px) {
+  .paper {
+    font-size: 1.45rem;
+    width: 674px;
+    height: 234px;
+    background-size: 1em 1em;
+    background-image: linear-gradient(
+        var(--dark-blue) 0.05em,
+        transparent 0.05em
+      ),
+      linear-gradient(90deg, var(--dark-blue) 0.05em, transparent 0.05em);
+  }
+}
+
+// Desktop
+@media (min-width: 1024px) {
+  .paper {
+    width: 930px;
+    height: 322px;
+    background-size: 1em 1em;
+    background-image: linear-gradient(
+        var(--dark-blue) 0.05em,
+        transparent 0.05em
+      ),
+      linear-gradient(90deg, var(--dark-blue) 0.05em, transparent 0.05em);
+  }
+}

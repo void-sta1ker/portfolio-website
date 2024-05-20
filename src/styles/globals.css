@@ -1,0 +1,174 @@
+@import "class-utils.css";
+
+:root {
+  /* --bg-black: #1e1e1e; */
+  --bg-black: #000;
+  --bg-white: #fff;
+  --text-white: #fff;
+  --text-black: #000;
+  --dark-blue: #264653;
+  --light-blue: #2a9d8f;
+  /* --yellow: #e9c46a; */
+  --yellow: #ecd444;
+  /* --orange: #f4a261; */
+  --orange: #e76f51;
+  /* --orange: #f24c00; */
+  --red: #ea3d26;
+  /* --red: #e52521; */
+  --purple: #6e2594;
+  --bg-primary: #0d1321;
+  --font-weight-light: 200;
+  --font-weight-medium: 400;
+  --font-weight-bold: 700;
+  --font-weight-semi-black: 800;
+  --font-weight-black: 900;
+  --font-size-sm: 0.8rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 2rem;
+  --font-size-xl: 3rem;
+  --font-size-xxl: 4rem;
+  --scrollbarBG: #0d1321;
+  --thumbBG: #90a4ae;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""),
+    url("/fonts/montserrat-v25-latin-regular.woff2") format("woff2"),
+    url("/fonts/montserrat-v25-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local(""), url("/fonts/montserrat-v25-latin-600.woff2") format("woff2"),
+    url("/fonts/montserrat-v25-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(""), url("/fonts/montserrat-v25-latin-700.woff2") format("woff2"),
+    url("/fonts/montserrat-v25-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local(""), url("/fonts/montserrat-v25-latin-900.woff2") format("woff2"),
+    url("/fonts/montserrat-v25-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local(""),
+    url("/fonts/jetbrains-mono-v13-latin-200.woff2") format("woff2"),
+    url("/fonts/jetbrains-mono-v13-latin-200.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""),
+    url("/fonts/jetbrains-mono-v13-latin-regular.woff2") format("woff2"),
+    url("/fonts/jetbrains-mono-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: "Architects Daughter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""),
+    url("/fonts/architects-daughter-v18-latin-regular.woff2") format("woff2"),
+    url("/fonts/architects-daughter-v18-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html,
+body {
+  font: 16px "Montserrat", sans-serif;
+  background-color: var(--bg-black);
+  color: var(--text-white);
+  cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAABx0lEQVRYhe3TvWsUURTG4d/Z2d0YFSSIIggWlmIhNiLaBLRLVESwsbAQ0mhhIzbCYHZmQBCd/RADAQsh4jY2EUQDKSyyM/oXaK2I+61xZMzuHIvEzo27cZfb5G3vufd9OHBhOz2SywfX75XCA6PuSfU6ELi11tU3bjHYawSwkaOqLHmP3k6YAoByLOlkX9ql5d1mAOs5me2Ov7CfLO8wBUCRM5nvu57Pzb3PGAFsMM7V4u5CuVy2DAEAuPTxy6F5VRVTAECuusXQNwgAlBuOX7lrDgAgcscthLfNAQBV9ZxCcNMYYF3BfccPrpkDgCA8zhXCy6YAAJaoPnWLwZQpAEBGE8qOX5k0BQAYR2Qx51dOmwIA7BSRRae4ctwUAGAPSeqVm68cMQUA2Kcir70H7w73Gkhv5dUkSag3G2ii/YwfVHQJ+CtiYMBap8PXavVTVtIzKU1W+7nTteRzr7OBAHEcU2vUP2THOPHQnmoNcve/AVEU0Wo3w/1jE6dse7IzjPK+Aa1v7ST6ET0reRevDKv4T/75CxqtZhxHP2dL3oWhl8MmG4h/xelmu72agpm8e35hFOWwyQaq9dpKxrLO+rPTIyvfDsBvhvGinPFZF6sAAAAASUVORK5CYII="),
+    auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+#__next {
+  /* for sticky footer */
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: none;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+a,
+input,
+label,
+button {
+  cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAADPklEQVRYhe2XTUwTQRTH3+xuu/1my0ILliqfKphKDKJCgAhGPgTxIH6Eg4kHw8F4gBiQgwkeDIoxGhPDwejBg0SjF/xAiB8YBBOp8YAkBgEhUiOEUiiUdtnujgeSCkhh27Ry8X+amTfz3i8z895kACRq/423TElTdxJgjKSukSJJzo7fstbJZeR5VisXbXa3jXNAztOG3fOhACDXm1Da2KXXqOmWSyfTo7K2RaspCthvdqfna/ud96EAINab4CWphC3RGkygxc1KMurkShmVEYrgkgCwgBBCy899ZT+sAOHWf4ANB6CCXVh4pTuPwMjkUXBtndX50/8UwOHiyzIS2Xwzq1a9+TI+VdTYk6dSURVygkh2zi3cbqvP/hw2AJJAUJkbL8tJNegBAIx6Zczd14N9pbvikClSST/o+n6k8GrPGUZNVwEGk+AVbz6pzrznz1/AdyCOVUFOqsFXB9Lj9ehs8VbFgZ0x9Pa4CDhdkByllpEtVQeTiy4es1hMrPL6oaaPxSEDWCmSQJBmZnz9BKMGLhy1KBKNWqRRUFC+x8zoVGRl2ABWkyFC4WtTJAEEAvU/BQhE6wIQWJCvHON4ATheAAAAEWOYc/M+m3OeXzk9eIDCa90GrYp+mJViZJaOWwftYB20AwCAzT4PrVabz9bcPhAQwJppyNB0y6n8RFOaWbcMVMTL23hpf6lRgvzuQFFjT3KkhrbsMDNhvSd+ncvkZHlOmoENZ/A1AdRyWbohgg57lvgNsCB4h1weIbADDSWAy8N3Wofsjg0D6KjL7hqwOWdXy2tWKwdWu1getEoKYvV/Kl9KrC40AIAQdnvFutbesb/e+jQz46v/kRoaCiwxPltF9uYQAQDAs5rMR32jjonJWS4gp0s16+aBF+BnUACAEJ71eM897hmdChbg06B9esbNtwYHAABttfs6hsddfX2j00KgwUcm5nD/2Iyto3bvq6ABAAA8C7jifufw8Lv+CU6QUGoxAPQOTArNLwd+zDjFEkDI7yLJP5zDDVaVkoFGIOBEtE4Beq1s1X+ly+0Vfzk4EDF+Meear3len7tmKgf+xcIYlV3+sGmBJGJWMyMQZziOG+lsyPdKcfcbWJISNLZcfMAAAAAASUVORK5CYII="),
+    auto;
+}
+
+code {
+  font-family: "JetBrains Mono", monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: calc(1em + 0.725em);
+  -webkit-font-smooth: antialiased;
+  font-smooth: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

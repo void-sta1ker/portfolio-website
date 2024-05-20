@@ -1,0 +1,28 @@
+.messageContainer {
+  height: 95vh;
+  position: relative;
+  bottom: 0;
+  z-index: 2;
+  width: 1036px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .message {
+    margin-top: auto;
+
+    p {
+      font-size: var(--font-size-lg);
+      width: 450px;
+      color: #ccc;
+    }
+  }
+
+  .messageLink {
+    margin-top: auto;
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-bold);
+    padding: 0.5rem 2rem;
+    border: 1px solid #fff;
+  }
+}
