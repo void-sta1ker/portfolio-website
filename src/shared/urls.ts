@@ -1,3 +1,3 @@
 export default {
-  resume: "/assets/Dilshod Ramatilloev.pdf",
+  resume: "/assets/Dilshod Rahmatilloev.pdf",
 };

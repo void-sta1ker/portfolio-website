@@ -108,26 +108,35 @@ export default Home;
 export const getStaticProps: GetStaticProps = async (context) => {
   // const projects = await import("@/data/projects.json");
   // const projects = await fetch("@/data/projects.json");
+
+  // const [technologies, stats, clients, projects] = await Promise.all([
+  //   fetch(process.env.TECHNOLOGIES_URL),
+  //   fetch(process.env.STATS_URL),
+  //   fetch(process.env.CLIENTS_URL),
+  //   fetch(process.env.PROJECTS_URL),
+  // ]);
+
   const [technologies, stats, clients, projects] = await Promise.all([
-    fetch(process.env.TECHNOLOGIES_URL),
-    fetch(process.env.STATS_URL),
-    fetch(process.env.CLIENTS_URL),
-    fetch(process.env.PROJECTS_URL),
+    import("@/db/stack.json"),
+    import("@/db/stats.json"),
+    import("@/db/clients.json"),
+    import("@/db/projects.json"),
   ]);
-  const [technologiesData, statsData, clientsData, projectsData] =
-    await Promise.all([
-      technologies.json(),
-      stats.json(),
-      clients.json(),
-      projects.json(),
-    ]);
+
+  // const [technologiesData, statsData, clientsData, projectsData] =
+  //   await Promise.all([
+  //     technologies.json(),
+  //     stats.json(),
+  //     clients.json(),
+  //     projects.json(),
+  //   ]);
 
   return {
     props: {
-      technologies: technologiesData,
-      stats: statsData,
-      clients: clientsData,
-      projects: projectsData,
+      technologies: technologies.default,
+      stats: stats.default,
+      clients: clients.default,
+      projects: projects.default,
     },
   };
 };
