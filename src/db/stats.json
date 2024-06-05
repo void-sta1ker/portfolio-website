@@ -6,7 +6,7 @@
       "src": "/icons/dropper.webp",
       "alt": "experience icon"
     },
-    "count": 3
+    "count": 4
   },
   {
     "id": "2",
@@ -24,7 +24,7 @@
       "src": "/icons/development.webp",
       "alt": "projects icon"
     },
-    "count": 10
+    "count": 20
   },
   {
     "id": "4",
@@ -33,7 +33,7 @@
       "src": "/icons/office.webp",
       "alt": "office icon"
     },
-    "count": 3,
+    "count": 4,
     "companies": [
       {
         "name": "Udevs",
@@ -46,6 +46,10 @@
       {
         "name": "Invan",
         "url": "https://in1.uz"
+      },
+      {
+        "name": "Uzinfocom",
+        "url": "https://uzinfocom.uz"
       }
     ]
   }

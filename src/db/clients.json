@@ -47,5 +47,19 @@
     "alt": "Tiin Market",
     "width": 75,
     "height": 75
+  },
+  {
+    "id": "8",
+    "src": "/icons/ucafe.svg",
+    "alt": "Ucafe",
+    "width": 75,
+    "height": 75
+  },
+  {
+    "id": "9",
+    "src": "/icons/edal.svg",
+    "alt": "E-dalolatnoma",
+    "width": 50,
+    "height": 50
   }
 ]

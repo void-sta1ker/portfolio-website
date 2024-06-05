@@ -44,7 +44,7 @@ export default function Footer({ className }: FooterProps) {
         <div className={classes.footerContent}>
           <animated.div style={{ transform, opacity }}>
             Made with <Heart isVisible={isVisible} /> by{" "}
-            <Link href="https://github.com/dilshodwiut" target="_blank">
+            <Link href="https://github.com/void-sta1ker" target="_blank">
               Dilshod
             </Link>
           </animated.div>

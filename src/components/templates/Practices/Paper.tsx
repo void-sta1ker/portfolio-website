@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useSprings, animated, config } from "@react-spring/web";
 import useIntersectionObserver from "src/hooks/useIntersectionObserver";
-import practices from "./practices";
+import practices from "./practices-data";
 import classes from "./Paper.module.scss";
 
 export default function Paper() {

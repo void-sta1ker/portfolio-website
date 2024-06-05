@@ -36,6 +36,30 @@
     "alt": "JSS"
   },
   {
+    "src": "/icons/stack/nestjs.svg",
+    "alt": "Nest.js"
+  },
+  {
+    "src": "/icons/stack/expressjs.svg",
+    "alt": "Express.js"
+  },
+  {
+    "src": "/icons/stack/mongodb.svg",
+    "alt": "MongoDB"
+  },
+  {
+    "src": "/icons/stack/mongoose.svg",
+    "alt": "Mongoose"
+  },
+  {
+    "src": "/icons/stack/prisma.svg",
+    "alt": "Prisma"
+  },
+  {
+    "src": "/icons/stack/typeorm.svg",
+    "alt": "TypeORM"
+  },
+  {
     "src": "/icons/stack/netlify.svg",
     "alt": "Netlify"
   },
@@ -108,10 +132,6 @@
     "alt": "Vite"
   },
   {
-    "src": "/icons/stack/gimp.svg",
-    "alt": "GIMP"
-  },
-  {
     "src": "/icons/stack/linux.svg",
     "alt": "Linux"
   },
@@ -160,10 +180,6 @@
     "alt": "GitLab"
   },
   {
-    "src": "/icons/stack/glitch.svg",
-    "alt": "Glitch"
-  },
-  {
     "src": "/icons/stack/gatsby.svg",
     "alt": "Gatsby"
   },
@@ -198,9 +214,5 @@
   {
     "src": "/icons/stack/i18next.svg",
     "alt": "i18next"
-  },
-  {
-    "src": "/icons/stack/bootstrap.svg",
-    "alt": "Bootstrap"
   }
 ]
